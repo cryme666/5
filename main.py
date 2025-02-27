@@ -51,10 +51,6 @@ while running:
     if ball_y - ball_radius <= 0 or ball_y + ball_radius >= height:
         ball_speed_y *= -1
 
-    
-    if ball_x - ball_radius <= 0 or ball_x + ball_radius >= width:
-        ball_speed_x *= -1
-
     screen.fill(background_color)
 
     if paddle1.collidepoint(ball_x - ball_radius,ball_y) or paddle1.collidepoint(ball_x + ball_radius,ball_y):
